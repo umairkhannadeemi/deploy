@@ -23,4 +23,3 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
           RUN: docker build -t hello .
-          RUN: docker run --rm hello 
