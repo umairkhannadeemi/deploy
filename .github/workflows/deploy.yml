@@ -22,6 +22,8 @@ jobs:
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
-          run: |
-           docker build -t hello .
-           docker run -rm hello
+
+      - name: docker run
+        run: |
+          docker build -t hello .
+          docker run -rm hello
