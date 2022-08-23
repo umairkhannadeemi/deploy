@@ -26,4 +26,4 @@ jobs:
       - name: docker run
         run: |
           docker build -t hello .
-          docker run -rm hello
+          docker run --rm hello
